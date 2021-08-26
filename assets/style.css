@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Cutive Mono', monospace;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBB360;
+
+}
+
+#main-card-container {
+  width: 400px;
+  max-width: 80%;
+  background-color: antiquewhite;  
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 6px;
+  font-size: 70px;
+  display: none;
+}
+
+
+.answers {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.start {
+    background-color: red;
+    color: black;
+    font-size: 75px;
+}
+.ansBtn {
+    font-size: 35px;
+}
