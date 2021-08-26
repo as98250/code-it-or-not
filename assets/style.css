@@ -17,7 +17,7 @@ body {
 
 }
 
-#main-card-container {
+#mainCard {
   width: 400px;
   max-width: 80%;
   background-color: antiquewhite;  
@@ -46,3 +46,4 @@ body {
     display: flex;
     justify-content: flex-end;
 }
+
