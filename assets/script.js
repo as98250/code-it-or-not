@@ -1,9 +1,9 @@
 let start = document.getElementById('start-btn')
 let cardElement = document.getElementById('mainCard')
-let questionContainer = document.getElementById('question')
-let answers = document.getElementById('answer-container')
+let questionContainer = document.getElementById('question-container')
+let gameOver = document.getElementById('gameOver')
 
-let timeEl = document.getElementById('iTimeShow')
+let timeEl = document.getElementById('timer')
 var currentIndex = 0;
 var myQuestions = [
     {
@@ -110,6 +110,23 @@ var score = 0;
 
 var secondsLeft = 90;
 
+function startTimer() {
+    var interval = setInterval(function () {
+
+    } )
+}
+
+var interval = setInterval ( function function1() {
+    timeEl.textContent = secondsLeft; 
+    secondsLeft-=1;
+        if(secondsLeft <= 0) {
+            secondsLeft = 0; 
+            clearInterval(interval)          
+        }
+            
+}
+, 1000);
+
 
 
 function startQuiz() {
@@ -130,4 +147,6 @@ function initiateQuestions() {
   //  localStorage.setItem("myQuestions", JSON.stringify)
   //  questionContainer.innerText = myQuestions.question
 
-  start.addEventListener("click", startQuiz);
+  start.addEventListener("click", startQuiz, function () {
+      startTimer();
+  })
