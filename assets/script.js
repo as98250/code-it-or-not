@@ -1,12 +1,12 @@
 let start = document.getElementById('start-btn')
-let cardQuestion = document.getElementById('main-card-container')
+let cardElement = document.getElementById('main-card-container')
+let questionContainer = document.getElementById('questions')
+let answers = document.getElementById('answer-container')
+
+var score = 0;
 
 
-// event listener 
-
-start.addEventListener('click', startQuiz)
-
-let questions = [
+const questions = [
     { question:"What is the correct algorithm for a for-loop?",
 
     answers: { 
@@ -129,23 +129,21 @@ let questions = [
         
         correctAnswer: 'b'
         },
-];
+]
 
-
-// function to start game 
-
+start.addEventListener('click', startQuiz)
 function startQuiz() {
-   start.style.display = "none";
-   cardQuestion.style.display = "block";
-   showQuestions()
-}
+    start.style.display = "none";
+    cardElement.style.display = "block";
+    initiateQuestions()
+ }
+
+function initiateQuestions(question) {
+  answers.innerText = questions.question
+  questions.answers
 
 
-// function to show question
-function showQuestions()
-for (var i =0; i < questions.length; i++) {}
 
-// function to capture selected answer 
 
 
 
