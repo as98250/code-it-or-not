@@ -42,3 +42,7 @@ body {
 .ansBtn {
     font-size: 35px;
 }
+.timer {
+    display: flex;
+    justify-content: flex-end;
+}
