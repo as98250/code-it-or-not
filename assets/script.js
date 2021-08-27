@@ -1,7 +1,8 @@
-let start = document.getElementById('start-btn')
-let cardElement = document.getElementById('mainCard')
-let questionContainer = document.getElementById('question-container')
-let gameOver = document.getElementById('gameOver')
+let start = document.getElementById('start-btn');
+let cardElement = document.getElementById('mainCard');
+let questionContainer = document.getElementById('question-container');
+let gameOver = document.getElementById('gameOver');
+let startPage = document.getElementById('startPage');
 
 let timeEl = document.getElementById('timer')
 var currentIndex = 0;
@@ -128,9 +129,9 @@ var interval = setInterval ( function function1() {
 , 1000);
 
 
-
 function startQuiz() {
     start.style.display = "none";
+    startPage.style.display = "none";
     cardElement.style.display = "block";
     initiateQuestions()
 }
